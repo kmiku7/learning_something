@@ -1,0 +1,4 @@
+resources:
+  warehouse:
+    config:
+      conn_str: "./local_sqlite3_storage.db"

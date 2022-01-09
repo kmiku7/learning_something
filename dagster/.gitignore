@@ -1,2 +1,5 @@
 demo_project/
 runtime/
+dagster-0.13.13/
+dagster-0.13.13.tar.gz
+*.db

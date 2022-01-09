@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-deployment
+  namespace: test-env
+spec:
+  selector:
+    matchLabels:
+      app: postgres-pod
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: postgres-pod
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:9.6.24
+        env:
+        - name: POSTGRES_PASSWORD
+          value: password
+        ports:
+        - containerPort: 5432

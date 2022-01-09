@@ -1,0 +1,4 @@
+resources:
+  warehouse:
+    config:
+      conn_str: "postgresql://postgres:password@10.1.0.89:5432/test"
