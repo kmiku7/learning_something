@@ -12,6 +12,7 @@ function display_info()
     echo "===== Start Grab System Info ====="
     echo "===== Show Kernel Info ====="
     dmesg -T || true
+    # dmesg -T | tail -n 400 || true
     echo "===== Show Disk Info ====="
     df -lh || true
     echo "===== Show Memory Info ====="
