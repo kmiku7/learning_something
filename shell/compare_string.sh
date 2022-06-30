@@ -1,6 +1,7 @@
 #!/bin/env bash
 
 # https://unix.stackexchange.com/questions/109625/shell-scripting-z-and-n-options-with-if
+# https://blog.csdn.net/happylzs2008/article/details/94835646
 
 [ ! -z $NOT_DEFINE ] && echo "is not null"
 [ -n $NOT_DEFINE ] && echo "is not null"
